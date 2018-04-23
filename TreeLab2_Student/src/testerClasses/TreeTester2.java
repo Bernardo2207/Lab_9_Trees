@@ -7,8 +7,13 @@ import treeInterfaces.Position;
 public class TreeTester2 {
 
 	public static void main(String[] args) throws CloneNotSupportedException {
-		LinkedTree<String> t = new LinkedTree<>(), 
-				              t1 = new LinkedTree<>(); 
+		LinkedTree<String> t = new LinkedTree<>(),  t1 = new LinkedTree<>(); 
+		
+		LinkedTree<Integer>test= new LinkedTree<>();
+		
+		LinkedTree<Integer> copy = test.clone();
+		
+		copy.addRoot(5);
 		
 		// add nodes and data to the tree
 		Position<String> p = t.addRoot("ROOT"); 	

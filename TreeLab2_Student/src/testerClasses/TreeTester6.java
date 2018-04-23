@@ -7,6 +7,10 @@ public class TreeTester6 {
 	public static void main(String[] args) { 
 		LinkedBinaryTree2<Integer> t = new LinkedBinaryTree2<>(); 
 		
+	  
+		//If i change the order in which the elements are inserted the tree would be different.
+		//the first element inserted will always be the root.
+		//From there it  adds the greater one to the right and the less one to the left.
 		t.insert(15); 
 		t.insert(12);
 		t.insert(10); 

@@ -85,7 +85,7 @@ public abstract class AbstractBinaryTree<E> extends AbstractTree<E> implements
 
 
 	// The following part has to do with Exercise 5.
-	/**
+	/**/
 	// internal method to construct the Iterable<Position<E>> object. 
 	// based on inorder traversal. 
 	protected void fillIterable(Position<E> r, ArrayList<Position<E>> pList) { 
@@ -94,8 +94,10 @@ public abstract class AbstractBinaryTree<E> extends AbstractTree<E> implements
 		pList.add(r); 
 		if (hasRight(r)) 
 			fillIterable(right(r), pList); 
+	//CON ESTE METODO LA LISTA SE RECORRE EN ORDEN DE MAGNITUD SEGUN SUS NODOS! EMPEZANDO SIEMPRE POR EL LADO IZQUIERDO 
+    //QUE  ES EL MENOR ENTRE AMBOS HIJOS DEL ROOT.
 	}
-    **/
+    /**/
 
 
 }

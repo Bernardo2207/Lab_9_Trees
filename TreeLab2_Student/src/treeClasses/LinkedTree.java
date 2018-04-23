@@ -120,23 +120,18 @@ public class LinkedTree<E> extends AbstractTree<E> implements Cloneable {
 				childNTD.setParent(parent); 
 			}	
 		}
-		
-		
-		/***************If you examine the code inside class LinkedTree,
-		 *  in particular, inside method remove, you will see that part of 
-		 *  it is marked as missing. In this exercise, you are asked to 
-		 *  discover what is missing and correct it. You need to carefully 
-		 *  study the other implemented parts of that method. Before doing it,
-		 *   run class program TreeTester2. It will end with an error from 
-		 *   an exception, as shown in Figure 3. That error happens because 
-		 *   of what is missing, and that you will need to discover. 
-****************************************/
 		// SOME MISSING CODE HERE -- DISCOVER IT AN ADD... 
 		// AS SPECIFIED IN EXERCISE 4. 
+		
+		//REMOVE THE NOW NULL ELEMENT FROM THE PARENTS CHILDREN LIST!!!
+		parent.getChildren().remove(ntd);
+		
+		
 		
 		
 		// discard the removed node
 		ntd.discard(); 
+		
 		
 		size--;    // adjust size
 		return etr;   // return removed value
